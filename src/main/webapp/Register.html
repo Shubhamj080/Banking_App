@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+</head>
+<body>
+	<h1 align="center">Register</h1>
+	<form align="center" action="RegisterServlet" method="post">
+		<label for="uname">Enter User Name: </label>
+		<input type="text" name="uname" placeholder="name" required>
+		<br><br> 
+		<label for="udob">Enter DOB (YYYY-MM-DD): </label>
+		<input type="text" name="udob" placeholder="date" required>
+		<br><br> 
+		<label for="upass">Enter Password: </label>
+		<input type="password" name="upass" placeholder="password" required>
+		<br><br>
+		<label for="uemail">Enter Email ID: </label>
+		<input type="email" name="uemail" placeholder="email" required>
+		<br><br>
+		<label for="umob">Enter Mobile No: </label>
+		<input type="text" name="umob" placeholder="mobile" required>
+		<br><br>  
+		<label for="acctype">Enter Account Type : </label>
+		<select name="acctype" id="acctype">
+  			<option value="sav">Savings</option>
+  			<option value="cur">Current</option>
+  			<option value="loan">Loan</option>
+		</select>
+		<br><br>		
+		<label for="utype">Enter Type : </label>
+		<input type="text" name="utype" value="user">
+		<br><br>  
+		<input type="submit">
+	</form>
+	<br>
+	<form align="center" action="AdminHome.jsp" method="get">
+	<input type="submit" value="Home">
+	</form>
+</body>
+</html>

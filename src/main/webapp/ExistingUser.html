@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Existing User Register Page</title>
+</head>
+<body>
+	<h1 align="center">Existing User Registeration</h1>
+	<form align="center" action="ExistingUserServlet" method="post">
+		<label for="uid">Enter Customer ID: </label>
+		<input type="text" name="uid" placeholder="customer id" required>
+		<br><br> 
+		<label for="acctype">Enter Account Type : </label>
+		<select name="acctype" id="acctype">
+  			<option value="sav">Savings</option>
+  			<option value="cur">Current</option>
+  			<option value="loan">Loan</option>
+		</select>
+		<br><br> 
+		<input type="submit">
+	</form>
+	<br>
+	<form align="center" action="AdminHome.jsp" method="get">
+	<input type="submit" value="Home">
+	</form>
+</body>
+</html>
